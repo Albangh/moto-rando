@@ -1,6 +1,6 @@
 import React from "react";
 
-import gif from "../../../assets/images/empty.gif";
+import gif from "../../../assets/images/gif.gif";
 import "./emptyView.scss";
 
 

@@ -20,9 +20,10 @@ const Itinerary = () => {
   return (
     <div className="itinerary_list">
       <div className="itinerary_list-left">
-        <InputFilterItinerary data={itinerary} />
+        <InputFilterItinerary data={itinerary} itemsPerPage={4} />
       </div>
       <div className="itinerary_list-right">
+        <h2 className="itinerary__title">RECHERCHER SUR LA CARTE</h2>
         {!isLoading && itinerary && <MapBox mapData={itinerary} />}
       </div>
     </div>
