@@ -4,7 +4,7 @@ import {
   SET_LOGOUT,
   SET_PSEUDO,
   SET_ERROR_CONNECTION,
-} from "../action/user";
+} from "../actions/user";
 /**
  * on met des valeurs par défaut sur notre statut (state)
  * par défaut elles sont vide

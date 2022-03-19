@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 
 import App from "../Components/App/App";
-import { actionAppMount } from "../action/system";
+import { actionAppMount } from "../actions/system";
 
 const AppContainer = () => {
   const dispatch = useDispatch();

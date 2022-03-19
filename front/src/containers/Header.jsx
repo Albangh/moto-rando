@@ -2,7 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 import Header from "../Components/Header/Header";
-import { actionSetLogout } from "../action/user";
+import { actionSetLogout } from "../actions/user";
 
 const HeaderContainer = () => {
   const dispatch = useDispatch();
