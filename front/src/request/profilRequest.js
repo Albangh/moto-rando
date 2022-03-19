@@ -1,4 +1,4 @@
-import axios from "axios";
+import apiAxios from ".";
 
 export async function requestLogin(
   alias,
@@ -8,7 +8,7 @@ export async function requestLogin(
   presentation
 ) {
   try {
-    const response = await axios.patch("http://localhost:3000/profil/3", {
+    const response = await apiAxios.patch("/profil/3", {
       alias,
       email,
       password,

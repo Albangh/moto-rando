@@ -1,8 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
-import axios from "../../../api/axios";
 import { Link } from "react-router-dom";
 import "./registrationUser.scss";
-
+import apiAxios from "../../../request";
 // const USER_REGEX = /^[A-z][A-z0-9-_]{3,23}$/;
 // const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
 
@@ -28,7 +27,7 @@ const RegistrationUser = () => {
 
 
     try {
-      const response = await axios.post(REGISTER_URL, {
+      const response = await apiAxios.post(REGISTER_URL, {
         alias,
         password,
         confirmPassword,

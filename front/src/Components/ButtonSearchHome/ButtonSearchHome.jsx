@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import "./content.scss";
+import "./style.scss";
 
-const Content = () => {
+const ButtonSearchHome = () => {
   return (
     <div className="home">
       <div className="home__header">
@@ -18,4 +18,4 @@ const Content = () => {
   );
 };
 
-export default React.memo(Content);
+export default React.memo(ButtonSearchHome);

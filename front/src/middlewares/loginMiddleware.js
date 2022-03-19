@@ -4,14 +4,14 @@ import {
   actionsSetPseudo,
   SET_LOGOUT,
   SUBMIT_LOGIN,
-} from "../action/user";
+} from "../actions/user";
 import { requestLogin } from "../request/loginRequest";
 import {
   setBearerToken,
   initBearerToken,
   removeBearerToken,
 } from "../request/index";
-import { APP_MOUNT } from "../action/system";
+import { APP_MOUNT } from "../actions/system";
 
 //loginMiddleware  va capturer la requete login
 const loginMiddleware = (store) => (next) => async (action) => {

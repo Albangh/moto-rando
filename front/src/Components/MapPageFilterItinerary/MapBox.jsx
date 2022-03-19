@@ -33,7 +33,7 @@ const MapBox = ({ mapData }) => {
 
   console.log(mapBoxData);
   return (
-    // c'est la carte de france avec tous les points on boucle sur toutes les régions
+    
     <>
       <MapContainer
         className="map"

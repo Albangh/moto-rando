@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import Itinerary from "../Itinerary/Itinerary";
+import CardItinerary from "../CardItinerary/CardItinerary";
 import FilterPanel from "./filterPanel/FilterPanel";
 import EmptyView from "./emptyView/EmptyView";
 
@@ -11,11 +11,12 @@ import "./inputFilterItinerary.scss";
 
 
 
+
 const responsive = {
   0: { items: 1 },
   568: { items: 2 },
 };
-// C'est la base du filtre qui va appeler filterPanel
+
 const InputFilterItinerary = ({ data }) => {
   const [selectedDistance, setSelectedDistance] = useState([20, 2000]);
 
@@ -39,7 +40,7 @@ const InputFilterItinerary = ({ data }) => {
     { id: 12, checked: false, label: "Pays de la Loire" },
     { id: 13, checked: false, label: "Provence-Alpes-Côte dAzur" },
   ]);
-// on déclare 3 fonctions pour récupérer les valeurs quand on clique sur les filtres
+
   const handleChangeDistance = (event, value) => {
     setSelectedDistance(value);
   };
@@ -58,7 +59,7 @@ const InputFilterItinerary = ({ data }) => {
   const applyFilters = () => {
     let updatedData = data;
 
-    // curve filter, si tu changes la valeur tu change les données
+
     if (selectedRatingCurve) {
       updatedData = updatedData.filter(
         (item) =>
@@ -66,7 +67,7 @@ const InputFilterItinerary = ({ data }) => {
       );
     }
 
-    // regions filter
+
     const districtsChecked = regions
       .filter((item) => item.checked)
       .map((item) => item.label);
@@ -77,7 +78,7 @@ const InputFilterItinerary = ({ data }) => {
       );
     }
 
-    // distance filter
+
     const minDistance = selectedDistance[0];
     const maxDistance = selectedDistance[1];
 
@@ -94,7 +95,6 @@ const InputFilterItinerary = ({ data }) => {
 
   useEffect(() => {
     applyFilters();
-    // ici on passe en paramétre pour changer l'état (filtre)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedRatingCurve, selectedDistance, regions]);
 
@@ -174,7 +174,7 @@ const InputFilterItinerary = ({ data }) => {
                   }
                 })
                 .map((item) => (
-                  <Itinerary
+                  <CardItinerary
                     key={item.itinerary_id}
                     map={item.pictures[0].pic_link}
                     title={item.itinerary_title}
