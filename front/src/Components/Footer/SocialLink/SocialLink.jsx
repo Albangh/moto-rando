@@ -10,10 +10,10 @@ const SocialLink = () => {
   return (
     <div className="link">
       <Link to="https://facebook.com">
-        <FaFacebookF />
+        <FaFacebookF className="fb" />
       </Link>
       <Link to="https://instagram.com">
-        <FaInstagram />
+        <FaInstagram className="insta" />
       </Link>
     </div>
   );

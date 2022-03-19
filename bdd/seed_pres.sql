@@ -2,19 +2,19 @@ BEGIN;
 
 INSERT INTO "district" ("name", "latitude", "longitude", "zoom")
 VALUES
-('Auvergne-Rhône-Alpes', 45, 5, 8),
-('Bourgogne-Franche-Comté', 47, 5, 8),
-('Bretagne', 48, -2, 8),
-('Centre-Val de Loire', 47, 2, 8),
-('Corse', 42, 9, 8),
-('Grand Est', 48., 5, 8),
-('Hauts-de-France', 49, 2, 8),
-('Île-de-France', 48, 2, 8),
-('Normandie', 49, 0, 8),
-('Nouvelle-Aquitaine', 45, 0, 8),
-('Occitanie', 43., 1, 8),
-('Pays de la Loire', 48, 0, 8),
-('Provence-Alpes-Côte dAzur', 44, 5, 8),
+('Auvergne-Rhône-Alpes', 45, 5, 6),
+('Bourgogne-Franche-Comté', 47, 5, 6),
+('Bretagne', 48, -2, 6),
+('Centre-Val de Loire', 47, 2, 6),
+('Corse', 42, 9, 6),
+('Grand Est', 48., 5, 6),
+('Hauts-de-France', 49, 2, 6),
+('Île-de-France', 48, 2, 6),
+('Normandie', 49, 0, 6),
+('Nouvelle-Aquitaine', 45, 0, 6),
+('Occitanie', 43., 1, 6),
+('Pays de la Loire', 48, 0, 6),
+('Provence-Alpes-Côte dAzur', 44, 5, 6),
 ('Toute la France', 47, 2, 6);
 
 INSERT INTO "user" ("alias", "email", "password", "presentation")

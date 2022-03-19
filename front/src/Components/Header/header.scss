@@ -1,10 +1,13 @@
 @import 'src/Styles/vars';
 
 .header{
-    background: $grey;
+    color: #fff;
+    background-color: $colorBase;
     width: 100%;
-    height: 150px;
+    height: 95px;
     padding: 0 1.5rem;
+    margin-bottom: -2px;
+    
     @include breakpoint(md){
         padding: 0 3rem;
     }
@@ -13,7 +16,6 @@
 
     &__content{
         overflow: hidden;
-        color: #fff;
         margin: 0 auto;
         max-width: 1920px;
         height: 100%;
@@ -35,7 +37,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            background: $grey;
+            background: $colorBase;
             transform: translate(0);
             transition: 0.3s ease transform;
 
@@ -90,16 +92,19 @@
     }
   .icon{
     margin: 30px 5px;
-    font-size: 3rem;
+    font-size: 1.7rem;
   }
-  .pseudo{
-    margin: 30px;
-    display: flex;
-    align-items: center;
-  }
+  .btn-link{
+    color: #fff;
+    border-color: $yellow;
+    font-family: 'WorkSans';
+    &:hover{
+        border-color: $yellow;
+    }
+}
   .btn__logout{
     cursor: pointer;
     font-size: 1.5rem;
-    color: $yellow;
+    color: #ef233c;
   }
 }

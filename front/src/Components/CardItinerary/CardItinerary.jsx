@@ -1,71 +1,80 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
-
+import MapCardItinerary from "../MapCardItinerary/MapCardItinerary";
 //style
-import { BiUserCircle } from "react-icons/bi";
-
+import { GiRoad } from "react-icons/gi";
+import { FaMotorcycle } from "react-icons/fa";
+import { BiTimeFive } from "react-icons/bi";
 import "./style.scss";
+import userAvatar from '../../assets/images/avatar.png'
 
-const CardItinerary = ({
+const Itinerary = ({
   id,
-  map,
   title,
-  description,
   user,
   kilometer,
   highway,
   hours,
   minutes,
-  district,
+  zoom,
+  latitude,
+  longitude,
+  trace
 }) => {
   return (
     <div className="card">
-      <div className="card-header">
-        <img className="card__img" src={map} alt={title} />
-      </div>
-      <div className="card-body">
-        <h4>
-          <Link to={`/itineraire/${id}`}>
-            <div className="card__title">{title}</div>
-          </Link>
-        </h4>
-        <div className="card-body-tag">
-          {district && <span className="tag tag-green">{district}</span>}
-          <span className="tag tag-teal">Distance: {kilometer} km</span>
-          <span className="tag tag-purple">
-            Durée: {hours} heures {minutes} min
-          </span>
-          <span className="tag tag-pink">
-            Autoroute: {highway === true ? "Oui" : "Non"}
-          </span>
+      <div className="container">
+        <div className="container__map">
+          <MapCardItinerary
+            className="container__img"
+            zoom={zoom}
+            latitude={latitude}
+            longitude={longitude}
+            trace={trace}
+          />
         </div>
-        <p>
-          {description.length > 1 ? description.substring(0, 150) + "..." : ""}
-        </p>
-        <Link className="link-itinerary" to={`/itineraire/${id}`}>
-          Voir l'itineraire
-        </Link>
-        <div className="user">
-          <span className="card__user">
-            <BiUserCircle className="icon" />
-            {user}
-          </span>
+
+        <div className="container__info">
+          <div className="info">
+            <FaMotorcycle />
+            <span> {kilometer}km</span>
+          </div>
+          <div className="info">
+            <BiTimeFive />
+            <span> {hours}h{minutes}m</span>
+          </div>
+          <div className="info">
+            <GiRoad />
+            <span> {highway === true ? "Oui" : "Non"}</span>
+          </div>
+        </div>
+        <div className="container__profile">
+          <img
+            src={userAvatar}
+            alt="people"
+          />
+
+          <div className="container__profile__text">
+            <Link to={`/itineraire/${id}`}>
+              <h2>{title}</h2>
+            </Link>
+            <p>Par <b>{user}</b></p>
+          </div>
         </div>
       </div>
     </div>
+
   );
 };
 
-CardItinerary.prototype = {
+Itinerary.prototype = {
   title: PropTypes.string.isRequired,
   map: PropTypes.string,
-  description: PropTypes.string,
 };
 
-CardItinerary.defaultProps = {
+Itinerary.defaultProps = {
   map: "https://fakeimg.pl/300",
-  description: "",
 };
 
-export default React.memo(CardItinerary);
+export default React.memo(Itinerary);

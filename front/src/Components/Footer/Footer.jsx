@@ -1,18 +1,48 @@
 // import react
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+
+
+//import page
+import SocialLink from "./SocialLink/SocialLink";
 
 // import style
 import "../Footer/footer.scss";
+import logo from "../../assets/images/logo-white.png";
 
-//import pages
-import SocialLink from "./SocialLink/SocialLink";
+
 
 const Footer = () => {
   return (
     <div className="footer">
-      <Link to="/mentions-legales">Mentions légales et CGU</Link>
-      <SocialLink />
+      <div className="footer-link">
+        <NavLink to="/">
+          <img
+            className="header__content__logo"
+            width="80px"
+            height="70px"
+            src={logo}
+            alt="logo du site"
+          />
+        </NavLink>
+        <NavLink
+          className='footer-link-nav'
+          to="/itineraires"
+        >
+          Roadbooks
+        </NavLink>
+        <NavLink
+         className='footer-link-nav'
+          to="/equipe"
+        >
+          L'équipe
+        </NavLink>
+        <NavLink className='footer-link-nav' to="/mentions-legales">Mentions légales</NavLink>
+        <NavLink className='footer-link-nav' to="/mentions-legales">CGU</NavLink>
+
+        <SocialLink />
+      </div>
+
     </div>
   );
 };

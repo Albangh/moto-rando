@@ -24,7 +24,7 @@ const OneItinerary = () => {
       setIsLoading(false);
     });
   }, [params.id]);
-  console.log(itineraryID);
+
 
   return (
     <div>
