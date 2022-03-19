@@ -7,7 +7,7 @@ import FormControlLabel from "@material-ui/core/FormControlLabel";
 const useStyles = makeStyles({
   root: {
     "&$checked": {
-      color: "#008593",
+      color: "#fcb500",
     },
   },
   checked: {},
@@ -21,7 +21,7 @@ const useStyles = makeStyles({
   },
   label: {
     fontSize: ".8rem",
-    fontFamily: "Poppins",
+    fontFamily: "WorkSans",
   },
 });
 
