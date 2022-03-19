@@ -2,12 +2,18 @@
 @use 'vars';
 
 @font-face {
-    font-family: 'Poppins';
-    src: url('../assets/fonts/Poppins-Regular.ttf');
+    font-family: 'WorkSans';
+    src: url('../assets/fonts/WorkSans-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Anton';
+    src: url('../assets/fonts/Anton-Regular.ttf');
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'WorkSans', sans-serif;
+    background: rgb(245, 247, 250);
 }
 
 #root{

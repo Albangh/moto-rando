@@ -16,7 +16,6 @@ const Itinerary = () => {
       setIsLoading(false);
     });
   }, []);
-  console.log(itinerary);
 
   return (
     <div className="itinerary_list">

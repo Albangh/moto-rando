@@ -2,11 +2,23 @@
 
 .footer{
     color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 1em 2em;
-    background-color: vars.$grey;
+    background-color: vars.$colorBase;
     margin-top: auto;
 
+    &-link{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 50px;
+
+        img{
+            margin-bottom: 20px;
+        }
+        
+        &-nav{
+            margin: 10px;
+        }
+    }
 }

@@ -5,12 +5,14 @@ import PropTypes from "prop-types";
 import logo from "../../assets/images/logo-white.png";
 import { BiMenuAltRight } from "react-icons/bi";
 import { IoCloseCircleOutline } from "react-icons/io5";
+import { IoMdLogOut } from "react-icons/io";
 import { GiFullMotorcycleHelmet } from "react-icons/gi";
-import { FiLogOut } from "react-icons/fi";
+
 import "./header.scss";
+import { Button } from "@mui/material";
 
 
-const Header = ({ isLogged, handleLogout, pseudo, id }) => {
+const Header = ({ isLogged, handleLogout, id }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const [size, setSize] = useState({
@@ -51,8 +53,8 @@ const Header = ({ isLogged, handleLogout, pseudo, id }) => {
         <NavLink to="/">
           <img
             className="header__content__logo"
-            width="130px"
-            height="100px"
+            width="100px"
+            height="70px"
             src={logo}
             alt="logo du site"
           />
@@ -79,7 +81,7 @@ const Header = ({ isLogged, handleLogout, pseudo, id }) => {
                 }
                 to="/itineraires"
               >
-                Listes des itinéraires
+                Roadbooks
               </NavLink>
             </li>
             <li>
@@ -95,28 +97,14 @@ const Header = ({ isLogged, handleLogout, pseudo, id }) => {
             </li>
             {!isLogged && (
               <>
-                <li>
+
                   <NavLink
                     onClick={closeMenu}
-                    className={({ isActive }) =>
-                      `header_link ${isActive ? "active" : ""}`
-                    }
-                    to="/inscription"
-                  >
-                    Inscription
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    onClick={closeMenu}
-                    className={({ isActive }) =>
-                      `header_link ${isActive ? "active" : ""}`
-                    }
                     to="/connexion"
                   >
-                    Connexion
+                    <Button className="btn-link" variant="outlined">Connexion</Button>
                   </NavLink>
-                </li>
+
               </>
             )}
             {isLogged && (
@@ -136,13 +124,12 @@ const Header = ({ isLogged, handleLogout, pseudo, id }) => {
                   <NavLink onClick={closeMenu} to={`/profil/${id}`}>
                     <p className="pseudo">
                       <GiFullMotorcycleHelmet className="icon" />
-                      {pseudo}
                     </p>
                   </NavLink>
                 </li>
 
                 <div className="btn__logout" onClick={handleLogout}>
-                  <FiLogOut />
+                  <IoMdLogOut />
                 </div>
               </>
             )}

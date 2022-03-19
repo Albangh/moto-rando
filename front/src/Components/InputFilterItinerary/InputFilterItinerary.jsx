@@ -10,8 +10,6 @@ import "react-alice-carousel/lib/alice-carousel.css";
 import "./inputFilterItinerary.scss";
 
 
-
-
 const responsive = {
   0: { items: 1 },
   568: { items: 2 },

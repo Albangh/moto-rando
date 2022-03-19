@@ -1,35 +1,73 @@
 @import 'src/Styles/vars';
 
 .home{
-    display: flex;
-    align-items: center;
-    height: 500px;
-    background-size: cover;
-    background: linear-gradient(rgba(114, 114, 114, 0.44), rgba(217, 217, 217, 0.05)), url('../../assets/images/photo2.jpg');
-    background-size:cover;
-    background-position:center;
-    padding: 30px;
-    margin-bottom: 50px;
+    background-color: $colorBase;
+    color: #fff;
 
-    &__header{
-        color: #fff;
-        margin: auto auto;
-        max-width: 500px;
-        background-color: rgba(7, 7, 7, 0.38);
-        padding: 50px 20px;
-        text-align: center;
 
-        &-title{
-            font-size: 1.5rem;
-            margin-bottom: 50px;
+    &-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 10px;
+
+        .icon{
+            font-size: 3rem;
+            margin-bottom: 30px;
         }
-        &-link{
-            border: 1px solid #fff;
-            padding: 10px 20px;
-            &:hover{
-                background-color: $blue;
-                transition: 0.3s ease all;
+        h2{
+            text-transform: uppercase;
+            font-weight: 100;
+            letter-spacing: 0.8rem;
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+        &::after{
+            content: '';
+            background-color: $yellow;
+            width: 100px;
+            height: 1px;
+            display: block;
+            margin: 20px auto;
+        }
+        }
+
+        img{
+            box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5);
+        }
+
+        h3{
+            font-family: 'Anton';
+            font-weight: 100;
+            font-size: 1.5rem;
+            margin: 50px auto;
+        }
+        p{
+            text-align: center;
+            line-height: 1.4rem;
+            &::after{
+                content: '';
+            background-color: $yellow;
+            width: 100px;
+            height: 1px;
+            display: block;
+            margin: 20px auto;
             }
         }
+        .btn-link{
+            margin-top: 50px;
+            color: #fff;
+            border-color: $yellow;
+            font-family: 'WorkSans';
+            &:hover{
+                border-color: $yellow;
+            }
+        }
+    }
+}
+
+
+@media  screen and (min-width: 768px) {
+    .mobile-img{
+        display: none;
     }
 }
