@@ -30,8 +30,7 @@ const ContentItinerary = ({ itineraryList }) => {
             //ici on va boucler pour récupérer une liste d'itinéraire
             itineraryList
             // le slice + reverse est pour dire qu'a chaque nouvel itinéraire il vient se placer en premier
-              .slice(0)
-              .reverse()
+              .slice(0).reverse()
               .map((itinerary) => (
                 //On rappelle un composant Itinerary, c'est les infos que l'on a besoin pour afficher un itinéraire,
                 <Itinerary
