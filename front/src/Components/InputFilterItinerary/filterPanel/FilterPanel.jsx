@@ -37,7 +37,7 @@ const ratingList = [
     label: "5🏍️",
   },
 ];
-// c'est toutes les props qu'on avait passer au composant inputFilterItinerary, on les repasse ici sous forme d'objet (destructuré)
+
 const FilterPanel = ({
   selectedDistance,
   changeDistance,

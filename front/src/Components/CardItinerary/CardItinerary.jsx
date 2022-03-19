@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 //style
 import { BiUserCircle } from "react-icons/bi";
 
-import "./itinerary.scss";
+import "./style.scss";
 
-const Itinerary = ({
+const CardItinerary = ({
   id,
   map,
   title,
@@ -57,15 +57,15 @@ const Itinerary = ({
   );
 };
 
-Itinerary.prototype = {
+CardItinerary.prototype = {
   title: PropTypes.string.isRequired,
   map: PropTypes.string,
   description: PropTypes.string,
 };
 
-Itinerary.defaultProps = {
+CardItinerary.defaultProps = {
   map: "https://fakeimg.pl/300",
   description: "",
 };
 
-export default React.memo(Itinerary);
+export default React.memo(CardItinerary);

@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { getAllList } from "../../request/itineraryRequest";
 import InputFilterItinerary from "../../Components/InputFilterItinerary/InputFilterItinerary";
-import MapBox from "../../Components/MapBox/MapBox";
+import MapBox from "../../Components/MapPageFilterItinerary/MapBox";
 //style
 import "./profilItinary.scss";
 
@@ -24,7 +24,6 @@ const Itinerary = () => {
         <InputFilterItinerary data={itinerary} />
       </div>
       <div className="itinerary_list-right">
-        {/* Si le isLoadding est est false et que tu trouves 1 itinéraires alors tu envoie les données dans Mapbox */}
         {!isLoading && itinerary && <MapBox mapData={itinerary} />}
       </div>
     </div>

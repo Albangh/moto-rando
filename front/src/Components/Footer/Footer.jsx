@@ -12,9 +12,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <Link to="/mentions-legales">Mentions légales et CGU</Link>
-      <Link to="/*">
-        <SocialLink />
-      </Link>
+      <SocialLink />
     </div>
   );
 };

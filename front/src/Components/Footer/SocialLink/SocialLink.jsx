@@ -9,10 +9,10 @@ import { Link } from "@mui/material";
 const SocialLink = () => {
   return (
     <div className="link">
-      <Link to="#">
+      <Link to="https://facebook.com">
         <FaFacebookF />
       </Link>
-      <Link to="#">
+      <Link to="https://instagram.com">
         <FaInstagram />
       </Link>
     </div>

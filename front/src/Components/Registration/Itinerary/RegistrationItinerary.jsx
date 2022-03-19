@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import axios from "../../../api/axios";
 import { useNavigate } from "react-router-dom";
 
 import apiAxios from "../../../request";
@@ -55,7 +54,7 @@ const RegistrationItinerary = ({ userId }) => {
     data.append("district", valueDistrict);
 
     try {
-      const response = await axios.post(ADD_ITINERARY, data, {
+      const response = await apiAxios.post(ADD_ITINERARY, data, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       console.log(response.data);

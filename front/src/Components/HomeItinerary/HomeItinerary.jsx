@@ -1,11 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import Itinerary from "../Itinerary/Itinerary";
+import CardItinerary from "../CardItinerary/CardItinerary";
 
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
-import "./contentItinerary.scss";
+import "./style.scss";
+
 
 const responsive = {
   0: { items: 1 },
@@ -15,7 +16,7 @@ const responsive = {
   1400: { items: 5 },
 };
 
-const ContentItinerary = ({ itineraryList }) => {
+const HomeItinerary = ({ itineraryList }) => {
   return (
     <>
       <h2 className="title">Des balades motos à couper le souffle</h2>
@@ -27,13 +28,11 @@ const ContentItinerary = ({ itineraryList }) => {
           controlsStrategy="alternate"
         >
           {
-            //ici on va boucler pour récupérer une liste d'itinéraire
             itineraryList
-            // le slice + reverse est pour dire qu'a chaque nouvel itinéraire il vient se placer en premier
               .slice(0).reverse()
               .map((itinerary) => (
-                //On rappelle un composant Itinerary, c'est les infos que l'on a besoin pour afficher un itinéraire,
-                <Itinerary
+
+                <CardItinerary
                   key={itinerary.itinerary_id}
                   map={itinerary.pictures[0].pic_link}
                   title={itinerary.itinerary_title}
@@ -63,18 +62,16 @@ const ContentItinerary = ({ itineraryList }) => {
           controlsStrategy="alternate"
         >
           {
-            //ici on va boucler pour récupérer une liste d'itinéraire
             itineraryList
               .filter(
                 (district) =>
                   district.districts[0].district_name ===
-                    "Provence-Alpes-CÃ´te dAzur" ||
+                  "Provence-Alpes-CÃ´te dAzur" ||
                   district.districts[0].district_name ===
-                    "Provence-Alpes-Côte dAzur"
+                  "Provence-Alpes-Côte dAzur"
               )
               .map((itinerary) => (
-                //c'est les infos que l'on a besoin pour afficher un itinéraire
-                <Itinerary
+                <CardItinerary
                   className="item"
                   data-value={itinerary.itinerary_id}
                   key={itinerary.itinerary_id}
@@ -97,7 +94,7 @@ const ContentItinerary = ({ itineraryList }) => {
   );
 };
 
-ContentItinerary.propTypes = {
+HomeItinerary.propTypes = {
   ItineraryList: PropTypes.arrayOf(
     PropTypes.shape({
       itinerary_id: PropTypes.number.isRequired,
@@ -108,4 +105,4 @@ ContentItinerary.propTypes = {
   ),
 };
 
-export default React.memo(ContentItinerary);
+export default React.memo(HomeItinerary);
