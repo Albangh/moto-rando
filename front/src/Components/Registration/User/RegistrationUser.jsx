@@ -1,7 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./registrationUser.scss";
 import apiAxios from "../../../request";
+import TextField from '@mui/material/TextField';
+import { Button } from "@mui/material";
 // const USER_REGEX = /^[A-z][A-z0-9-_]{3,23}$/;
 // const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
 
@@ -10,6 +12,8 @@ const REGISTER_URL = "/profil/inscription";
 const RegistrationUser = () => {
   const userRef = useRef();
   const errRef = useRef();
+
+  const navigate = useNavigate();
 
   const [alias, setAlias] = useState("");
   const [email, setEmail] = useState("");
@@ -57,86 +61,71 @@ const RegistrationUser = () => {
   return (
     <>
       {success ? (
-        <>
-          <h2 className="success">Inscription reussie</h2>
-          <Link to="/connexion" className="btn btn-3">
-            Se connecter
-          </Link>
-        </>
+        navigate('/connexion')
       ) : (
         <>
-          <p
-            ref={errRef}
-            className={errMsg ? "errmsg" : "offscreen"}
-            aria-live="assertive"
-          >
-            {errMsg}
-          </p>
-          <div className="card-login">
-            <div className="card-image">
-              <h2 className="card-heading">
-                INSCRIVEZ-VOUS
-                <small>Vos informations</small>
-              </h2>
-            </div>
-            <form className="card-form" onSubmit={handleSubmit}>
-              <div className="input">
-                <input
-                  className="input-field"
-                  type="text"
-                  id="username"
-                  ref={userRef}
-                  onChange={(e) => setAlias(e.target.value)}
-                  value={alias}
-                  required
-                />
-                <label className="input-label">Pseudo</label>
-              </div>
-              <div className="input">
-                <input
-                  className="input-field"
-                  type="email"
-                  id="email"
-                  onChange={(e) => setEmail(e.target.value)}
-                  value={email}
-                  required
-                />
-                <label className="input-label">Email</label>
-              </div>
-              <div className="input">
-                <input
-                  className="input-field"
-                  type="password"
-                  id="password"
-                  onChange={(e) => setPassword(e.target.value)}
-                  value={password}
-                  required
-                />
-                <label className="input-label">Mot de passe</label>
-              </div>
-              <div className="input">
-                <input
-                  className="input-field"
-                  type="password"
-                  id="confirm_pwd"
-                  onChange={(e) => setConfirmPassword(e.target.value)}
-                  value={confirmPassword}
-                  required
-                />
-                <label className="input-label">
-                  Confirmer votre mot de passe
-                </label>
-              </div>
-              <div className="action">
-                <button className="action-button">S'inscrire</button>
-              </div>
+          <div className="signup">
+            <h2 className="signup-title">Inscription</h2>
+            <form className="signup-form" onSubmit={handleSubmit} >
+              <h3 className="subtitle">Veuillez remplir le formulaire ci-dessous</h3>
+              <Button ref={errRef} color="error">
+                {errMsg}
+              </Button>
+              <TextField
+                className="signup-input"
+                id="username"
+                type='text'
+                color="warning"
+                label="Pseudo"
+                variant="outlined"
+                ref={userRef}
+                onChange={(e) => setAlias(e.target.value)}
+                value={alias}
+              />
+              <TextField
+                className="signup-input"
+                id="email"
+                type='email'
+                color="warning"
+                required
+                label="Email"
+                variant="outlined"
+                ref={userRef}
+                onChange={(e) => setEmail(e.target.value)}
+                value={email}
+              />
+              <TextField
+                className="signup-input"
+                id="password"
+                type='password'
+                color="warning"
+                required
+                label="Mot de passe"
+                variant="outlined"
+                ref={userRef}
+                onChange={(e) => setPassword(e.target.value)}
+                value={password}
+              />
+              <TextField
+                className="signup-input"
+                id="confirm_pwd"
+                type='password'
+                color="warning"
+                required
+                label="Confirmez mot de passe"
+                variant="outlined"
+                ref={userRef}
+                onChange={(e) => setConfirmPassword(e.target.value)}
+                value={confirmPassword}
+              />
+              <button className="btn-signup" variant="outlined">3..2..1.. go</button>
+              <h3 className="subtitle">J'ai déjà un compte ?</h3>
+              <Link to='/connexion'>
+                <Button className="btn-link" variant="outlined">Se connecter</Button>
+              </Link>
             </form>
-            <div className="card-info">
-              <p>
-                Déjà un compte ? <Link to="/connexion">connectez-vous</Link>
-              </p>
-            </div>
           </div>
+
         </>
       )}
     </>
