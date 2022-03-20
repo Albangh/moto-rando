@@ -16,6 +16,12 @@ body {
     background: rgb(245, 247, 250);
 }
 
+
+img {
+    max-width: 100%;
+    display: block;
+  }
+
 #root{
   height: 100%;
 }

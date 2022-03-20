@@ -1,7 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { TextField } from "@mui/material";
 
-const Input = ({ value, type, name, placeholder, onChange }) => {
+const Input = ({ value, type, name, placeholder, onChange, label }) => {
   const handleChange = (event) => {
     onChange(event.target.value, name);
   };
@@ -9,13 +10,16 @@ const Input = ({ value, type, name, placeholder, onChange }) => {
   const inputId = `field-${name}`;
 
   return (
-    <input
+    <TextField
       // React - state
       onChange={handleChange}
+      className="signup-input"
+      color="warning"
+      label={label}
+      variant="outlined"
       value={value}
       // infos base
       id={inputId}
-      className="input-field"
       type={type}
       placeholder={placeholder}
       name={name}
