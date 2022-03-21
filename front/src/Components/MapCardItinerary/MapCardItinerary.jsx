@@ -9,6 +9,7 @@ const MapCardItinerary = ({ zoom, latitude, longitude, trace }) => {
   const [mapData, setMapData] = useState("");
   const [isLoading, setIsLoading] = useState(true);
 
+
   useEffect(() => {
     axios.get(`${trace}`).then(({ data }) => {
       setMapData(data);
@@ -39,8 +40,8 @@ const MapCardItinerary = ({ zoom, latitude, longitude, trace }) => {
         >
           <Marker position={mapData.features[1].geometry.coordinates}></Marker>
           <TileLayer
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            attribution="Map data &copy; <a href=&quot;https://www.openstreetmap.org/&quot;>OpenStreetMap</a> contributors, <a href=&quot;https://creativecommons.org/licenses/by-sa/2.0/&quot;>CC-BY-SA</a>, Imagery &copy; <a href=&quot;https://www.mapbox.com/&quot;>Mapbox</a>"
+            url="https://api.mapbox.com/styles/v1/albandev/cl10kfcjr005215p69m1mmg6q/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiYWxiYW5kZXYiLCJhIjoiY2wxMGtqN2Y5MDd5MzNmbWdidXk0czh3YSJ9.PIWasy9XjGpaBv7aljRKjA"
           />
           <GeoJSON data={mapData} />
         </MapContainer>
