@@ -17,7 +17,7 @@ router
 // Routes de récupération, de mise à jour ou de suppression d'1 itinéraire
 router
   .route('/:id')
-  .get(authenticateToken, controllerHandler(itineraryController.findOne))
+  .get(controllerHandler(itineraryController.findOne))
   .patch(controllerHandler(itineraryController.update))
   .delete(controllerHandler(itineraryController.delete));
 
