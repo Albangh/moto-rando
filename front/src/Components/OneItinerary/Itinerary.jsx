@@ -6,7 +6,6 @@ import MyMap from "../MapOneItinerary/MyMap";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import { RiPinDistanceFill, RiMapPinTimeFill } from "react-icons/ri";
 import { GiRoad, GiMountainRoad } from "react-icons/gi";
-// import { RiPinDistanceFill } from "react-icons/ri";
 
 import {
   FacebookShareButton,
@@ -53,24 +52,24 @@ const OneItinerary = ({
       <div className="itinerary">
         <div className="detail__itinerary">
           <div className="detail__itinerary-span tag-teal">
-            <h5 className="blue"><RiPinDistanceFill /></h5>
+            <h5><RiPinDistanceFill className="blue"/></h5>
             <span>{kilometer}km</span>
           </div>
 
           <div className="detail__itinerary-span tag-purple">
-            <h5 className="red"><RiMapPinTimeFill /></h5>
+            <h5><RiMapPinTimeFill className="red"/></h5>
             <span>
               {hour}h{minute}
             </span>
           </div>
 
           <div className="detail__itinerary-span tag-pink">
-            <h5 className="orange"><GiRoad /></h5>
+            <h5><GiRoad className="orange"/></h5>
             <span>{highway === true ? "Oui" : "Non"}</span>
           </div>
 
           <div className="detail__itinerary-span tag-green">
-            <h5 className="green"><GiMountainRoad /></h5>
+            <h5><GiMountainRoad className="green"/></h5>
             <span className="curve">{curve}/5</span>
           </div>
         </div>

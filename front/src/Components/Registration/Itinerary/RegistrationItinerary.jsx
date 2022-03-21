@@ -1,8 +1,10 @@
+
+
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import Box from '@mui/material/Box';
 import apiAxios from "../../../request";
-
+import { Checkbox, FormControlLabel, MenuItem, TextField } from "@mui/material";
 import "./itineraryForm.scss";
 
 
@@ -78,130 +80,187 @@ const RegistrationItinerary = ({ userId }) => {
   };
 
   return (
-    <div className="form">
-      <h2>Créer un itineraire</h2>
+    <>
 
-      <form
-        action="/itineraires/:id"
-        encType="multipart/form-data"
-        className="itinerary-form"
-        onSubmit={send}
-      >
-        <label htmlFor="title">Titre de l'itinéraire</label>
-        <input
-          id="title"
-          type="text"
-          placeholder="Titre de l'itinéraire"
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
-        />
+      <div className="header-itinerary">
+        <h1 className="detail-title">Créer un itineraire</h1>
+      </div>
 
-        <label htmlFor="district">Région</label>
-        <select
-          className="form-select"
-          value={valueDistrict}
-          onChange={handleChangeDistrict}
+      <div className="form">
+        <h3 className="subtitle">Veuillez remplir le formulaire ci-dessous</h3>
+        <form
+          action="/itineraires/:id"
+          encType="multipart/form-data"
+          className="itinerary-form"
+          onSubmit={send}
         >
-          <option>Selectionnez votre Région </option>
-          {district.map((region, index) => (
-            <option key={index} id={region.id} value={region.id}>
-              {region.name}
-            </option>
-          ))}
-        </select>
+          <Box
+            sx={{
+              width: 600,
+              maxWidth: '100%',
+            }}
+          >
+            <TextField
+              required
+              fullWidth
+              className="signup-input"
+              color="warning"
+              label="Titre"
+              variant="outlined"
+              id="title"
+              type="text"
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
+            />
 
-        <label htmlFor="map">
-          Votre itinéraire.
-          <div>'.geojson' uniquement.</div>
-        </label>
-        <input
-          type="file"
-          id="map"
-          accept=".geojson"
-          onChange={(event) => {
-            const file = event.target.files[0];
-            setMap(file);
-          }}
-        />
+            <TextField
+              required
+              fullWidth
+              className="signup-input"
+              color="warning"
+              variant="outlined"
+              select
+              label="Régions"
+              value={valueDistrict}
+              onChange={handleChangeDistrict}
+              helperText="Selectionnez votre Région"
+            >
+              {district.map((option) => (
+                <MenuItem key={option} id={option.id} value={option.id}>
+                  {option.name}
+                </MenuItem>
+              ))}
+            </TextField>
 
-        <label htmlFor="root">Sinuosité de la route</label>
-        <input
-          id="root"
-          type="number"
-          min="1"
-          max="5"
-          placeholder="Type de route"
-          value={curve}
-          onChange={(e) => setCurve(e.target.value)}
-        />
+            <TextField
+              required
+              fullWidth
+              className="signup-input"
+              color="warning"
+              variant="outlined"
+              id="outlined-number"
+              label="Sinuosité de la route 1-5"
+              type="number"
+              value={curve}
+              onChange={(e) => setCurve(e.target.value)}
+              InputLabelProps={{
+                shrink: true,
+              }}
+              InputProps={{ inputProps: { min: "0", max: "5", step: "1" } }}
+            />
 
-        <label htmlFor="duration">Durée de l'itinéraire</label>
+            <TextField
+              required
+              fullWidth
+              className="signup-input"
+              color="warning"
+              variant="outlined"
+              id="outlined-number"
+              label="Nombre de kilomètres"
+              type="number"
+              value={kilometer}
+              onChange={(e) => setKilometer(e.target.value)}
+              InputLabelProps={{
+                shrink: true,
+              }}
+              InputProps={{ inputProps: { min: "0", max: '5000', step: "1" } }}
+            />
 
-        <input
-          id="hour"
-          placeholder="Heures"
-          type="number"
-          min="0"
-          value={hour}
-          onChange={(e) => setHour(e.target.value)}
-        />
-        <input
-          id="minute"
-          placeholder="Minutes"
-          type="number"
-          min="0"
-          max="59"
-          value={minute}
-          onChange={(e) => setMinute(e.target.value)}
-        />
+            <h3 className="subtitle">Durée de l'itinéraire</h3>
 
-        <label htmlFor="km">Nombre de kilomètres</label>
-        <input
-          id="km"
-          type="number"
-          min="1"
-          value={kilometer}
-          onChange={(e) => setKilometer(e.target.value)}
-        />
+            <TextField
+              required
+              fullWidth
+              className="signup-input"
+              color="warning"
+              variant="outlined"
+              id="outlined-number"
+              label="Heures"
+              type="number"
+              value={hour}
+              onChange={(e) => setHour(e.target.value)}
+              InputLabelProps={{
+                shrink: true,
+              }}
+              InputProps={{ inputProps: { min: "0", step: "1" } }}
+            />
 
-        <label htmlFor="highway">Trajet avec autoroute</label>
-        <input
-          type="checkbox"
-          id="highway"
-          value={highway}
-          onChange={(e) => setHighway(e.target.value)}
-        />
+            <TextField
+              required
+              fullWidth
+              className="signup-input"
+              color="warning"
+              variant="outlined"
+              id="outlined-number"
+              label="Minutes"
+              type="number"
+              value={minute}
+              onChange={(e) => setMinute(e.target.value)}
+              InputLabelProps={{
+                shrink: true,
+              }}
+              InputProps={{ inputProps: { min: "0", max: '59', step: "1" } }}
+            />
 
-        <label htmlFor="description">
-          Description de votre itinéraire (point de vue, endroit friendly
-          motard,...)
-        </label>
-        <textarea
-          id="description"
-          type="text"
-          value={description}
-          placeholder="Description de l'itinéraire "
-          onChange={(e) => setDescription(e.target.value)}
-        />
+            <h3 className="subtitle">Informations supplémentaires</h3>
 
-        <label htmlFor="photo">Vos plus belles photos</label>
-        <input
-          type="file"
-          id="photo"
-          accept=".jpg, .jpeg"
-          multiple
-          name="file"
-          onChange={(event) => {
-            const file = event.target.files[0];
-            setFile(file);
-          }}
-        />
+            <TextField
+              required
+              fullWidth
+              className="signup-input"
+              color="warning"
+              label="Description"
+              variant="outlined"
+              id="description"
+              type="text"
+              value={description}
+              onChange={(e) => setDescription(e.target.value)}
+            />
 
-        <button className="form__btn-submit" target="'/itineraires'">
-          Valider l'itinéraire
-        </button>
-      </form>
-    </div>
+            <FormControlLabel control={<Checkbox color="success" value={highway}
+              onChange={(e) => setHighway(e.target.checked)} />} label="Trajet avec autoroute"
+
+            />
+
+            <TextField
+              required
+              fullWidth
+              className="signup-input"
+              color="warning"
+              variant="outlined"
+              type="file"
+              id="map"
+              accept=".geojson"
+              onChange={(event) => {
+                const file = event.target.files[0];
+                setMap(file);
+              }}
+              helperText="Selectionnez votre GEOJson"
+            />
+
+            <TextField
+              required
+              fullWidth
+              className="signup-input"
+              color="warning"
+              variant="outlined"
+              type="file"
+              accept=".jpg, .jpeg"
+              multiple
+              name="file"
+              onChange={(event) => {
+                const file = event.target.files[0];
+                setFile(file);
+              }}
+              helperText="Vos plus belles photos"
+            />
+          </Box>
+
+          <button className="btn-signup" variant="outlined">Valider</button>
+
+        </form>
+      </div>
+    </>
   );
 };
 
