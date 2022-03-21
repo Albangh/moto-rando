@@ -36,6 +36,8 @@ const OneItinerary = ({
   pictures,
   trace,
 }) => {
+
+
   console.log("trace", trace);
   return (
     <>
