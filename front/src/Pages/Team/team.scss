@@ -2,20 +2,6 @@
 
 .team{
 
-  &__title{
-    margin: 50px auto;
-    font-weight: bold;
-    font-size: 1.5rem;
-  }
-  &__span{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 200px;
-  }
-
-
-
   &__card{
     display: flex;
     flex-wrap: wrap;
@@ -38,9 +24,12 @@
           }
 
           h3{
-            font-weight: bold;
+            font-family: "Anton";
+            font-weight: 100;
+            letter-spacing: 0.5rem;
+            text-align: center;
             text-transform: uppercase;
-            color: $blue;
+            color: $yellow;
           }
           h5, p{
             margin: 10px;
@@ -53,12 +42,24 @@
           align-items: center;
           justify-content: center;
           font-size: 2rem;
-
-            a{
-              color: $blue;
+          cursor: pointer;
+            .fb{
+              color: #0466c8;
+            }
+            .lk{
+              color: #023047;
+            }
+            .twitter{
+              color: #00b4d8;
             }
         }
       }
+  }
+  .team__span{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    font-style: italic;
   }
 }
 

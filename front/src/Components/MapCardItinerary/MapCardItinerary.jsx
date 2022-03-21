@@ -40,7 +40,6 @@ const MapCardItinerary = ({ zoom, latitude, longitude, trace }) => {
         >
           <Marker position={mapData.features[1].geometry.coordinates}></Marker>
           <TileLayer
-            attribution="Map data &copy; <a href=&quot;https://www.openstreetmap.org/&quot;>OpenStreetMap</a> contributors, <a href=&quot;https://creativecommons.org/licenses/by-sa/2.0/&quot;>CC-BY-SA</a>, Imagery &copy; <a href=&quot;https://www.mapbox.com/&quot;>Mapbox</a>"
             url="https://api.mapbox.com/styles/v1/albandev/cl10kfcjr005215p69m1mmg6q/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiYWxiYW5kZXYiLCJhIjoiY2wxMGtqN2Y5MDd5MzNmbWdidXk0czh3YSJ9.PIWasy9XjGpaBv7aljRKjA"
           />
           <GeoJSON data={mapData} />

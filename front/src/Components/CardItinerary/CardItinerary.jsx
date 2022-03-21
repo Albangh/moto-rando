@@ -3,9 +3,8 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import MapCardItinerary from "../MapCardItinerary/MapCardItinerary";
 //style
-import { GiRoad } from "react-icons/gi";
-import { FaMotorcycle } from "react-icons/fa";
-import { BiTimeFive } from "react-icons/bi";
+import { RiPinDistanceFill, RiMapPinTimeFill } from "react-icons/ri";
+import { GiRoad, GiMountainRoad } from "react-icons/gi";
 import "./style.scss";
 import userAvatar from '../../assets/images/avatar.png'
 
@@ -20,7 +19,8 @@ const Itinerary = ({
   zoom,
   latitude,
   longitude,
-  trace
+  trace,
+  curve
 }) => {
   return (
     <div className="card">
@@ -37,16 +37,20 @@ const Itinerary = ({
 
         <div className="container__info">
           <div className="info">
-            <FaMotorcycle />
+            <RiPinDistanceFill className="blue"/>
             <span> {kilometer}km</span>
           </div>
           <div className="info">
-            <BiTimeFive />
+          <RiMapPinTimeFill className="red"/>
             <span> {hours}h{minutes}m</span>
           </div>
           <div className="info">
-            <GiRoad />
+          <GiRoad className="orange"/>
             <span> {highway === true ? "Oui" : "Non"}</span>
+          </div>
+          <div className="info">
+          <GiMountainRoad className="green"/>
+          <span className="curve">{curve}/5</span>
           </div>
         </div>
         <div className="container__profile">

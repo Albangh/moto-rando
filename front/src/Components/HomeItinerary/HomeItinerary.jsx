@@ -53,6 +53,7 @@ const HomeItinerary = ({ itineraryList, isLogged, userId }) => {
                   latitude={itinerary.districts[0].district_latitude}
                   zoom={itinerary.districts[0].district_zoom}
                   trace={itinerary.itinerary_trace}
+                  curve={itinerary.itinerary_curve}
                 />
               ))
           }

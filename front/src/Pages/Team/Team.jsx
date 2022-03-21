@@ -2,9 +2,9 @@ import React from "react";
 
 import { Link } from "@mui/material";
 
-import Alban from "../../assets/images/Alban.webp";
+import Alban from "../../assets/images/Maxime.webp";
 import Elodie from "../../assets/images/Elodie.webp";
-import Maxime from "../../assets/images/Maxime.webp";
+import Maxime from "../../assets/images/Alban.webp";
 import Karine from "../../assets/images/Karine.webp";
 import Yann from "../../assets/images/Yann.webp";
 
@@ -20,7 +20,9 @@ import {
 const Team = () => {
   return (
     <div className="team">
-      <h2 className="team__title">L'équipe Moto'Rando</h2>
+      <div className="header-itinerary">
+        <h1 className="detail-title">TEAM MOTO'RANDO</h1>
+      </div>
 
       <div className="team__card">
         <div className="team__card-id">
@@ -31,13 +33,13 @@ const Team = () => {
             <p>Développeur Back</p>
             <div className="id-social">
               <Link to="#">
-                <TiSocialFacebookCircular />
+                <TiSocialFacebookCircular className="fb" />
               </Link>
               <Link to="#">
-                <TiSocialLinkedinCircular />
+                <TiSocialLinkedinCircular className="lk" />
               </Link>
               <Link to="#">
-                <TiSocialTwitterCircular />
+                <TiSocialTwitterCircular className="twitter" />
               </Link>
             </div>
           </div>
@@ -51,13 +53,13 @@ const Team = () => {
             <p>Développeur Front</p>
             <div className="id-social">
               <Link to="#">
-                <TiSocialFacebookCircular />
+                <TiSocialFacebookCircular className="fb" />
               </Link>
               <Link to="#">
-                <TiSocialLinkedinCircular />
+                <TiSocialLinkedinCircular className="lk" />
               </Link>
               <Link to="#">
-                <TiSocialTwitterCircular />
+                <TiSocialTwitterCircular className="twitter" />
               </Link>
             </div>
           </div>
@@ -71,13 +73,13 @@ const Team = () => {
             <p>Développeur Back</p>
             <div className="id-social">
               <Link to="#">
-                <TiSocialFacebookCircular />
+                <TiSocialFacebookCircular className="fb" />
               </Link>
               <Link to="#">
-                <TiSocialLinkedinCircular />
+                <TiSocialLinkedinCircular className="lk" />
               </Link>
               <Link to="#">
-                <TiSocialTwitterCircular />
+                <TiSocialTwitterCircular className="twitter" />
               </Link>
             </div>
           </div>
@@ -91,13 +93,13 @@ const Team = () => {
             <p>Développeur Front</p>
             <div className="id-social">
               <Link to="#">
-                <TiSocialFacebookCircular />
+                <TiSocialFacebookCircular className="fb" />
               </Link>
               <Link to="#">
-                <TiSocialLinkedinCircular />
+                <TiSocialLinkedinCircular className="lk" />
               </Link>
               <Link to="#">
-                <TiSocialTwitterCircular />
+                <TiSocialTwitterCircular className="twitter" />
               </Link>
             </div>
           </div>
@@ -111,13 +113,13 @@ const Team = () => {
             <p>Developpeur Back</p>
             <div className="id-social">
               <Link to="#">
-                <TiSocialFacebookCircular />
+                <TiSocialFacebookCircular className="fb" />
               </Link>
               <Link to="#">
-                <TiSocialLinkedinCircular />
+                <TiSocialLinkedinCircular className="lk" />
               </Link>
               <Link to="#">
-                <TiSocialTwitterCircular />
+                <TiSocialTwitterCircular className="twitter" />
               </Link>
             </div>
           </div>
