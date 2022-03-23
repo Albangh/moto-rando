@@ -2,8 +2,16 @@
 
 .profil{
   max-width: 1200px;
-  margin: 0 auto 300px;
+  margin: 0 auto;
 
+  .title-description {
+    color: $colorBase;
+    font-family: "Anton";
+    font-weight: 100;
+    text-align: center;
+    margin: 50px 0;
+  }
+  
   &__detail{
     display: flex;
     justify-content: space-around;
@@ -28,20 +36,18 @@
     width: 300px;
   }
   &-create{
-    display: flex;
-    align-items: center;
-    background-color: #38b000;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
+    display:block;
     margin: 20px auto;
-    padding: 10px 50px;
-    width: 350px;
     text-align: center;
 
     .icon{
       margin-left: 10px;
     }
+  }
+
+  .delete-profil{
+    margin: 20px auto;
+    display: block;
   }
 }
 

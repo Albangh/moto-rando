@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from 'react-router-dom';
@@ -12,6 +13,7 @@ import { BsPeople } from 'react-icons/bs'
 import img1 from '../../assets/images/img1.jpg'
 import img2 from '../../assets/images/img2.jpg'
 import { Button } from "@mui/material";
+import FixedBarHome from "../FixBarHome/FixedBarHome";
 
 
 const responsive = {
@@ -88,15 +90,17 @@ const HomeItinerary = ({ itineraryList, isLogged, userId }) => {
               </div>
             </div>
 
-
-
-
             {isLogged ? (
-              <Link
-                to={`profil/${userId}/nouveau-itineraire`}
-              >
-                <Button className="btn-link" variant="outlined">créer votre itineraire</Button>
-              </Link>
+              <>
+                <Link
+                  to={`profil/${userId}/nouveau-itineraire`}
+                >
+                  <Button className="btn-link" variant="outlined">créer votre itineraire</Button>
+                </Link>
+
+                <FixedBarHome userId={userId} />
+              </>
+
             ) : (
               <Link to="/inscription">
                 <Button className="btn-link" variant="outlined">créer votre itineraire</Button>
