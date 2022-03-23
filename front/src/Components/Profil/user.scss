@@ -6,6 +6,49 @@
   flex-direction: column;
   margin-top: 0;
 
+  .btn-link{
+    display: block;
+    margin: 10px auto;
+    color: $colorBase;
+    border-color: $yellow;
+    font-family: 'WorkSans';
+    &:hover{
+        border-color: $yellow;
+    }
+}
+
+.btn-bike{
+  display: block;
+  margin: 10px auto;
+  font-family: 'WorkSans';
+  &:hover{
+      border-color: $yellow;
+  }
+}
+
+  .title-description {
+    color: $colorBase;
+    font-family: "Anton";
+    font-weight: 100;
+    text-align: center;
+    margin: 50px 0;
+  }
+
+  .title-description-user {
+    color: $colorBase;
+    font-family: "Anton";
+    font-weight: 100;
+    text-align: center;
+    &::after{
+      content: '';
+      background-color: $yellow;
+      width: 30px;
+      height: 2px;
+      display: block;
+      margin: 5px auto;
+    }
+  }
+
     &-infos{
       text-align: center;
       margin: 20px 0;
@@ -15,6 +58,7 @@
     }
 
     &__picture{
+      margin-top: 20px;
       width: 30%;
       display: block;
       border-radius: 50%;
@@ -26,30 +70,26 @@
     align-items: center;
     h2{
       margin: 20px;
-      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
       padding: 10px 50px;
       font-size: 1.2rem;
-      border-radius: 10px;
-      border-bottom: 4px solid $blue;
     }
-    span{
+   
+   span{
       margin: 0px 0 30px 0;
-      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
       padding: 10px 50px;
       font-size: 1.2rem;
-      border-radius: 10px;
-      border-bottom: 4px solid $blue;
+      color: $colorBase;
     }
     p{
       margin: 0px 10px 30px 10px;
-      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
       padding: 10px 50px;
       font-size: 1rem;
-      border-radius: 10px;
-      border-bottom: 4px solid $blue;
       text-align: center;
+      color: $colorSecond;
     }
+    
   }
+  
       input, textarea{
          width: 100%;
          margin: 20px 0;
@@ -59,6 +99,5 @@
          font-family: 'Poppins', sans-serif;
       }
     }
-
 
 

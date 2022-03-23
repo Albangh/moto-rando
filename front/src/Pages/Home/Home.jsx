@@ -33,7 +33,6 @@ const Home = () => {
       <ButtonSearchHome />
 
       <HomeItinerary itineraryList={itinerary} userId={userId} isLogged={isLogged} />
-
     </>
   );
 };

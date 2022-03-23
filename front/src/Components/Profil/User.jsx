@@ -3,25 +3,33 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-import avatar from "../../assets/images/racer.png";
-import { BsPen } from "react-icons/bs";
+import userAvatar from '../../assets/images/avatar.png'
 import "../Profil/user.scss";
+import { Button } from "@mui/material";
 
 
 const User = ({ id, alias, email, presentation }) => {
   return (
     <div className="user">
-      <h5 className="user-infos">Mes informations personnelles</h5>
       <div className="user__detail">
-        <img className="user__picture" src={avatar} alt="photo de profil" />
+        <img className="user__picture" src={userAvatar} alt="photo de profil" />
+        <h5 className="title-description-user">Pseudo</h5>
         <h2>{alias}</h2>
+        <h5 className="title-description-user">mail</h5>
         <span>{email}</span>
-        {presentation ? <p>{presentation}</p> : ""}
+        {presentation ?
+          <>
+            <h5 className="title-description-user">Ma description</h5>
+            <p>{presentation}</p>
+          </>
+          : ""}
       </div>
+
       <Link to={`/profil/${id}/modifier`}>
-        <button className="profil-update">
-          Ajouter une description <BsPen className="icon" />{" "}
-        </button>
+          <Button className="btn-link" variant="outlined">Ajouter une description</Button>
+      </Link>
+      <Link to={`/profil/${id}/modifier`}>
+          <Button className="btn-bike" color="secondary" variant="contained">Ajouter une moto</Button>
       </Link>
     </div>
   );
