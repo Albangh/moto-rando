@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 
-import Header from "../Components/Header/Header";
+import Header from "../components/Header/Header";
 import { actionSetLogout } from "../actions/user";
 
 const HeaderContainer = () => {

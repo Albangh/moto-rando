@@ -1,11 +1,11 @@
 import { Routes, Route } from "react-router-dom";
 
 // route
-import Home from "../../Pages/Home/Home";
-import Registration from "../../Pages/Registration/Registration";
-import Team from "../../Pages/Team/Team";
-import Itinerary from "../../Pages/FilterItinerary/Itinerary";
-import OneItinerary from "../../Pages/OneItinerary/Itinerary";
+import Home from "../../pages/Home/Home";
+import Registration from "../../pages/Registration/Registration";
+import Team from "../../pages/Team/Team";
+import Itinerary from "../../pages/FilterItinerary/Itinerary";
+import OneItinerary from "../../pages/OneItinerary/Itinerary";
 import Profil from "../../containers/Profil";
 import LoginContainer from "../../containers/Login";
 import HeaderContainer from "../../containers/Header";

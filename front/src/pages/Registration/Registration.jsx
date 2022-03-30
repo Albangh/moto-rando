@@ -1,7 +1,7 @@
 // import react
 import React from "react";
-//component
-import RegistrationUser from "../../Components/Registration/User/RegistrationUser";
+//components
+import RegistrationUser from "../../components/Registration/User/RegistrationUser";
 // import style
 import "../Registration/registration.scss";
 import "./registration.scss";

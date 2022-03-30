@@ -1,0 +1,49 @@
+{
+  "user_id": 8,
+  "user_alias": "Axel",
+  "user_email": "axel@gmail.com",
+  "user_presentation": "",
+  "motorbike_id": null,
+  "motorbike_brand": null,
+  "motorbike_model": null,
+  "motopic_title": null,
+  "motopic_link": null,
+  "itineraries": [
+    {
+      "title": "La Palmyre",
+      "pics": [
+        {
+          "pic_title": "photo0jpg.jpg",
+          "pic_link": "http://localhost:3000/images/1647874069888_photo0jpg.jpg"
+        }
+      ]
+    },
+    {
+      "title": "La Rochelle",
+      "pics": [
+        {
+          "pic_title": "Vieux port et Cours des Dames_julien chauvet.jpg",
+          "pic_link": "http://localhost:3000/images/1647873957331_Vieux port et Cours des Dames_julien chauvet.jpg"
+        }
+      ]
+    },
+    {
+      "title": "Royan cote de beaute",
+      "pics": [
+        {
+          "pic_title": "istock-1140586683.jpg",
+          "pic_link": "http://localhost:3000/images/1647874257356_istock-1140586683.jpg"
+        }
+      ]
+    },
+    {
+      "title": "Week end amis",
+      "pics": [
+        {
+          "pic_title": "Vieux port et Cours des Dames_julien chauvet.jpg",
+          "pic_link": "http://localhost:3000/images/1647874575370_Vieux port et Cours des Dames_julien chauvet.jpg"
+        }
+      ]
+    }
+  ]
+}

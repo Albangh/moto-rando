@@ -2,7 +2,7 @@ import React from "react";
 import { Navigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 
-import Login from "../Components/Login/Login";
+import Login from "../components/Login/Login";
 import { actionSubmitLogin, actionUpdateLoginInput } from "../actions/user";
 
 const LoginContainer = () => {

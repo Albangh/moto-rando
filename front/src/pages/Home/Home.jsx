@@ -6,8 +6,8 @@ import { useSelector } from "react-redux";
 import { getAllList } from "../../request/itineraryRequest";
 
 // import composants
-import HomeItinerary from "../../Components/HomeItinerary/HomeItinerary";
-import ButtonSearchHome from "../../Components/ButtonSearchHome/ButtonSearchHome";
+import HomeItinerary from "../../components/HomeItinerary/HomeItinerary";
+import ButtonSearchHome from "../../components/ButtonSearchHome/ButtonSearchHome";
 // import style
 import "../Home/home.scss";
 
