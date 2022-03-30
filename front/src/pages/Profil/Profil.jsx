@@ -2,14 +2,12 @@ import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 
 //composants
-import User from "../../Components/Profil/User";
-import Bike from "../../Components/Profil/Bike/Bike";
+import User from "../../components/Profil/User";
+import Bike from "../../components/Profil/Bike/Bike";
 
 //styles
-import { AiOutlinePlusCircle } from "react-icons/ai";
 
 import "./profil.scss";
-import ItineraryProfil from "../../Components/Profil/ItineraryProfil/ItineraryProfil";
 import apiAxios from "../../request";
 import { Button } from "@mui/material";
 
@@ -32,13 +30,10 @@ const Profil = () => {
   }, [params.id]);
   console.log(profilID);
 
-  const deleteRow = async (id, e) => {  
-    await apiAxios.delete(`/profil/${id}`)  
-      .then(res => {  
-        console.log(res);  
-        console.log(res.data);  
-      })  
-  }  
+  const deleteUser = (id, e) => {
+    apiAxios.delete(`/profil/${id}`)
+      .then(res => console.log('Supprimer', res)).catch(err => console.log(err))
+  }
 
   return (
     <>
@@ -64,7 +59,7 @@ const Profil = () => {
               </Button>
             </Link>
 
-            <Button onClick={(e) => deleteRow(profilID.user_id, e)} className="delete-profil" variant="outlined" color="error">
+            <Button onClick={(e) => deleteUser(profilID.user_id, e)} className="delete-profil" variant="outlined" color="error">
               Supprimer mon profil
             </Button>
           </>

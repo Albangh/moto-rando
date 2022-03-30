@@ -48,7 +48,7 @@ content-type: application/json
 }
 
 ### supprimer un itinéraire
-DELETE http://localhost:3000/itineraires/11
+DELETE http://localhost:3000/itineraires/24
 
 ###################################################################################################################
 ### REGIONS
@@ -64,7 +64,7 @@ GET http://localhost:3000/regions/10
 ### USERS
 
 ### rechercher un profil avec son id
-GET http://localhost:3000/profil/7
+GET http://localhost:3000/profil/8
 
 ### ajout d'un profil
 POST http://localhost:3000/profil/inscription
@@ -90,7 +90,7 @@ content-type: application/json
 }
 
 ### supprimer un profil avec son id
-DELETE http://localhost:3000/profil/7
+DELETE http://localhost:3000/profil/8
 
 
 ###################################################################################################################

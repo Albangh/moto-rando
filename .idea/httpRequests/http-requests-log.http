@@ -1,0 +1,36 @@
+GET http://localhost:3000/profil/8
+
+<> 2022-03-30T164755.200.json
+
+###
+
+GET http://localhost:3000/profil/7
+
+<> 2022-03-30T164751.403.json
+
+###
+
+DELETE http://localhost:3000/itineraires/24
+
+<> 2022-03-30T164734.500.json
+
+###
+
+GET http://localhost:3000/itineraires
+
+<> 2022-03-30T164717.200.json
+
+###
+
+DELETE http://localhost:3000/profil/8
+
+<> 2022-03-30T164556.500.json
+
+###
+
+DELETE http://localhost:3000/profil/7
+
+<> 2022-03-30T164546.200.json
+
+###
+

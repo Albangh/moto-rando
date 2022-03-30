@@ -1,8 +1,8 @@
 // import react
 import React, { useEffect, useState } from "react";
 import { getAllList } from "../../request/itineraryRequest";
-import InputFilterItinerary from "../../Components/InputFilterItinerary/InputFilterItinerary";
-import MapBox from "../../Components/MapPageFilterItinerary/MapBox";
+import InputFilterItinerary from "../../components/InputFilterItinerary/InputFilterItinerary";
+import MapBox from "../../components/MapPageFilterItinerary/MapBox";
 //style
 import "./profilItinary.scss";
 

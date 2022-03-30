@@ -2,7 +2,7 @@ import React from "react";
 import { Navigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 
-import ProfilUpdate from "../Components/ProfilUpdate/ProfilUpdate";
+import ProfilUpdate from "../components/ProfilUpdate/ProfilUpdate";
 
 const RegistrationItineraryContainer = () => {
   const logged = useSelector((state) => state.user.logged);

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
 
-import Itinerary from "../../Components/OneItinerary/Itinerary";
+import Itinerary from "../../components/OneItinerary/Itinerary";
 import apiAxios from "../../request";
 
 import "./style.scss";

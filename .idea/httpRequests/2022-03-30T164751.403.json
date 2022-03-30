@@ -1,0 +1,5 @@
+{
+  "status": "error",
+  "statusCode": 403,
+  "message": "User not found"
+}

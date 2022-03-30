@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="39584928-c1f7-48b4-b92b-220fe53e8bd9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/back/app/routers/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/back/app/routers/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/test.http" beforeDir="false" afterPath="$PROJECT_DIR$/back/test.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/App/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/App/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/App/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/App/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/ButtonSearchHome/ButtonSearchHome.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/ButtonSearchHome/ButtonSearchHome.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/ButtonSearchHome/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/ButtonSearchHome/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/CardItinerary/CardItinerary.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/CardItinerary/CardItinerary.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/CardItinerary/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/CardItinerary/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/Error/Error.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Error/Error.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/Error/error.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Error/error.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/FixBarHome/FixedBarHome.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/FixBarHome/FixedBarHome.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/FixBarHome/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/FixBarHome/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Footer/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/Footer/LegalNotice/LegalNotice.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Footer/LegalNotice/LegalNotice.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/Footer/LegalNotice/legalNotice.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Footer/LegalNotice/legalNotice.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/Footer/SocialLink/SocialLink.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Footer/SocialLink/SocialLink.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/Footer/SocialLink/socialLink.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Footer/SocialLink/socialLink.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/Footer/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Footer/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/Header/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Header/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/HomeItinerary/HomeItinerary.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/HomeItinerary/HomeItinerary.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/HomeItinerary/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/HomeItinerary/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/InputFilterItinerary/InputFilterItinerary.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/InputFilterItinerary/InputFilterItinerary.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/InputFilterItinerary/checkBox/CheckboxProton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/InputFilterItinerary/checkBox/CheckboxProton.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/InputFilterItinerary/emptyView/EmptyView.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/InputFilterItinerary/emptyView/EmptyView.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/InputFilterItinerary/emptyView/emptyView.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/InputFilterItinerary/emptyView/emptyView.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/InputFilterItinerary/filterListCurve/FilterListCurve.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/InputFilterItinerary/filterListCurve/FilterListCurve.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/InputFilterItinerary/filterPanel/FilterPanel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/InputFilterItinerary/filterPanel/FilterPanel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/InputFilterItinerary/inputFilterItinerary.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/InputFilterItinerary/inputFilterItinerary.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/InputFilterItinerary/sliderInput/SliderProton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/InputFilterItinerary/sliderInput/SliderProton.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/Login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Login/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/Login/input/Input.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Login/input/Input.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/MapCardItinerary/MapCardItinerary.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/MapCardItinerary/MapCardItinerary.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/MapOneItinerary/MyMap.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/MapOneItinerary/MyMap.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/MapPageFilterItinerary/MapBox.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/MapPageFilterItinerary/MapBox.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/MapPageFilterItinerary/map.json" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/MapPageFilterItinerary/map.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/MapPageFilterItinerary/mapBox.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/MapPageFilterItinerary/mapBox.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/OneItinerary/Itinerary.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/OneItinerary/Itinerary.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/OneItinerary/carousel.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/OneItinerary/carousel.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/OneItinerary/itinerary.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/OneItinerary/itinerary.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/Profil/Bike/Bike.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Profil/Bike/Bike.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/Profil/Bike/bike.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Profil/Bike/bike.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/Profil/ItineraryProfil/ItineraryProfil.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Profil/ItineraryProfil/ItineraryProfil.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/Profil/ItineraryProfil/cardItineraryProfil/Card.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Profil/ItineraryProfil/cardItineraryProfil/Card.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/Profil/ItineraryProfil/cardItineraryProfil/card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Profil/ItineraryProfil/cardItineraryProfil/card.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/Profil/User.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Profil/User.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/Profil/user.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Profil/user.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/ProfilUpdate/ProfilUpdate.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/ProfilUpdate/ProfilUpdate.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/ProfilUpdate/profilUpdate.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/ProfilUpdate/profilUpdate.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/Registration/Itinerary/RegistrationItinerary.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Registration/Itinerary/RegistrationItinerary.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/Registration/Itinerary/itineraryForm.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Registration/Itinerary/itineraryForm.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/Registration/RegistrationBike.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Registration/RegistrationBike.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/Registration/User/RegistrationUser.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Registration/User/RegistrationUser.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/Registration/User/registrationUser.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/Registration/User/registrationUser.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Components/scrollToTop/ScrollToTop.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/components/scrollToTop/ScrollToTop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Pages/FilterItinerary/Itinerary.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/pages/FilterItinerary/Itinerary.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Pages/FilterItinerary/profilItinary.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/pages/FilterItinerary/profilItinary.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Pages/Home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/pages/Home/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Pages/Home/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/pages/Home/home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Pages/OneItinerary/Itinerary.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/pages/OneItinerary/Itinerary.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Pages/OneItinerary/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/pages/OneItinerary/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Pages/Profil/Profil.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/pages/Profil/Profil.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Pages/Profil/profil.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/pages/Profil/profil.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Pages/Registration/Registration.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/pages/Registration/Registration.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Pages/Registration/registration.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/pages/Registration/registration.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Pages/Team/Team.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/pages/Team/Team.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/Pages/Team/team.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/pages/Team/team.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/containers/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/containers/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/containers/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/containers/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/containers/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/containers/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/containers/Profil.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/containers/Profil.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/containers/RegistrationItinerary.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/containers/RegistrationItinerary.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/containers/UpdateProfil.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/containers/UpdateProfil.jsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="276pztqB5j7dtgrbEgYbNKGfMKV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/front/src" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\alban\OneDrive\Documents\www\moto-rando\front\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="HTTP Request.test | #################################################################################################################################################################################################################################3">
+    <configuration name="test | #################################################################################################################################################################################################################################1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/back/test.http" index="3" requestIdentifier="#################################################################################################################################################################################################################################1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="test | #################################################################################################################################################################################################################################3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/back/test.http" index="10" requestIdentifier="#################################################################################################################################################################################################################################3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="test | supprimer un itinéraire" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/back/test.http" index="7" requestIdentifier="supprimer un itinéraire" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="test | supprimer un profil avec son id" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/back/test.http" index="13" requestIdentifier="supprimer un profil avec son id" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.test | #################################################################################################################################################################################################################################3" />
+        <item itemvalue="HTTP Request.test | supprimer un itinéraire" />
+        <item itemvalue="HTTP Request.test | #################################################################################################################################################################################################################################1" />
+        <item itemvalue="HTTP Request.test | supprimer un profil avec son id" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="39584928-c1f7-48b4-b92b-220fe53e8bd9" name="Changes" comment="" />
+      <created>1648650656443</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1648650656443</updated>
+      <workItem from="1648650660656" duration="1732000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/front/src/pages/Home/Home.jsx</url>
+          <line>1</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

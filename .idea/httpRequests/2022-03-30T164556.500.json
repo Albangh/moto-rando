@@ -1,0 +1,5 @@
+{
+  "status": "error",
+  "statusCode": 500,
+  "message": "UPDATE ou DELETE sur la table « user » viole la contrainte de clé étrangère « itinerary_user_id_fkey » de la table « itinerary »"
+}
